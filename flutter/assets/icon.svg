@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -10 145 130">
+  <defs>
+    <!-- Degradado azul profundo para la nube -->
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a7b9b" />
+      <stop offset="100%" stop-color="#123a4f" />
+    </linearGradient>
+    
+    <!-- Degradado metálico para los engranes -->
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fadd60" />
+      <stop offset="50%" stop-color="#d69b18" />
+      <stop offset="100%" stop-color="#916404" />
+    </linearGradient>
+    
+    <!-- Degradado brillante para el código -->
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe673" />
+      <stop offset="100%" stop-color="#e09c00" />
+    </linearGradient>
+    
+    <!-- Plantilla del engrane perfecto -->
+    <g id="gear">
+      <path d="M-4,-23 l4,0 l4,5 l6,-2 l5,5 l-2,6 l5,4 l0,4 l-5,4 l2,6 l-5,5 l-6,-2 l-4,5 l-4,0 l-4,-5 l-6,2 l-5,-5 l2,-6 l-5,-4 l0,-4 l5,-4 l-2,-6 l5,-5 l6,2 z M0,-11 a11,11 0 1,0 0,22 a11,11 0 1,0 0,-22 z" fill="url(#gearGrad)" fill-rule="evenodd"/>
+    </g>
+  </defs>
+  
+  <!-- Engranaje superior derecho -->
+  <g transform="translate(90, 38) scale(0.9) rotate(15)">
+    <use href="#gear"/>
+  </g>
+  
+  <!-- Engranaje inferior centro -->
+  <g transform="translate(62, 95) scale(0.85) rotate(45)">
+    <use href="#gear"/>
+  </g>
+  
+  <!-- Nube central -->
+  <path d="M 28,85 
+           a 22,22 0 0,1 0,-44 
+           a 26,26 0 0,1 42,-12 
+           a 24,24 0 0,1 34,16 
+           a 20,20 0 0,1 0,40 z" 
+        fill="url(#cloudGrad)"/>
+        
+  <!-- Símbolos de código </ > -->
+  <g fill="none" stroke="url(#codeGrad)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 50,47 L 36,59 L 50,71" />
+    <path d="M 69,41 L 58,77" />
+    <path d="M 77,47 L 91,59 L 77,71" />
+  </g>
+</svg>
