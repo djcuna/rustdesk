@@ -129,7 +129,7 @@ class ConnectionManagerState extends State<ConnectionManager>
               gFFI.chatModel.showChatPage(MessageKey(client.peerId, client.id));
             });
           }
-          windowManager.setTitle(getWindowNameWithId(client.peerId));
+          windowManager.setTitle('CodePromx - ${client.peerId}');
           gFFI.cmFileModel.updateCurrentClientId(client.id);
         }
       }
