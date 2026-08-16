@@ -365,7 +365,7 @@ void _runApp(
     builder: (context) => GetMaterialApp(
       navigatorKey: globalKey,
       debugShowCheckedModeBanner: false,
-      title: title,
+      title: 'CodePromx',
       theme: MyTheme.lightTheme,
       darkTheme: MyTheme.darkTheme,
       themeMode: themeMode,
