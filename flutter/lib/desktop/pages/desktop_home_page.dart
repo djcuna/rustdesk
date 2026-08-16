@@ -580,6 +580,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
       String? link,
       bool? closeButton,
       String? closeOption}) {
+    return const SizedBox.shrink();
     if (bind.mainGetBuildinOption(key: kOptionHideHelpCards) == 'Y' &&
         content != 'install_daemon_tip') {
       return const SizedBox();
